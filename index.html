@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Déraison — Présentation</title>
-    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Lora:wght@400;500&family=Inter:wght@400;500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -188,6 +188,40 @@
             letter-spacing: 3px;
         }
 
+        .font-sample {
+            padding: 1rem;
+            margin: 1rem 0;
+            border-left: 3px solid var(--sang);
+            background-color: rgba(0,0,0,0.02);
+        }
+
+        .font-sample-lora {
+            font-family: "Lora", serif;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .font-sample-inter {
+            font-family: "Inter", sans-serif;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .font-sample-dm {
+            font-family: "DM Sans", sans-serif;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .font-label {
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            color: var(--muted);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 0.5rem;
+        }
+
         footer {
             text-align: center;
             padding: 2rem;
@@ -311,8 +345,30 @@
                     <p>
                         Les éléments de personnalisation essentiels :
                     </p>
-                    <ul>
-                        <li><strong>Police :</strong> Le corps des articles est actuellement en cursive (Architects Daughter). C'est moins lisible.</li>
+
+                    <h4 style="margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--foreground);">Police actuelle (cursive)</h4>
+                    <div class="font-sample">
+                        <div class="font-label">Architects Daughter (cursive)</div>
+                        <p>Le corps des articles est actuellement en cursive. C'est moins lisible pour de longs textes.</p>
+                    </div>
+
+                    <h4 style="margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--foreground);">Alternatives modernes</h4>
+                    <div class="font-sample font-sample-lora">
+                        <div class="font-label">Lora (serif, lisible)</div>
+                        <p>Le corps des articles en Lora. Serif classique et élégant, très lisible pour les longs articles de presse.</p>
+                    </div>
+
+                    <div class="font-sample font-sample-inter">
+                        <div class="font-label">Inter (sans-serif, moderne)</div>
+                        <p>Le corps des articles en Inter. Sans-serif épuré et contemporain, parfait pour du contenu long et accessible.</p>
+                    </div>
+
+                    <div class="font-sample font-sample-dm">
+                        <div class="font-label">DM Sans (sans-serif, géométrique)</div>
+                        <p>Le corps des articles en DM Sans. Sans-serif géométrique et stylisé, tendance 2025 avec bonne lisibilité.</p>
+                    </div>
+
+                    <ul style="margin-top: 1.5rem;">
                         <li><strong>Images :</strong> Style actuel « aquarelle délavée ».</li>
                     </ul>
                 </div>
