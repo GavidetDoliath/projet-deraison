@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Déraison — Présentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --background: #FAFAF3;
+            --foreground: #09090b;
+            --sang: #c0392b;
+            --muted: #71717a;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--background);
+            color: var(--foreground);
+            font-family: "Architects Daughter", cursive;
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        /* Header Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--background);
+            border-bottom: 2px solid var(--foreground);
+            padding: 1rem 2rem;
+            z-index: 1000;
+            box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: var(--foreground);
+            text-decoration: none;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            letter-spacing: 1px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--sang);
+        }
+
+        /* Main Content */
+        main {
+            margin-top: 80px;
+            max-width: 900px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 6rem;
+            padding: 2rem;
+            background-color: var(--background);
+            border: 2px solid var(--foreground);
+            box-shadow: 4px 4px 0 rgba(0, 0, 0, 0.15);
+        }
+
+        section h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--foreground);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--sang);
+        }
+
+        section h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            margin-top: 2rem;
+            color: var(--foreground);
+        }
+
+        .intro-meta {
+            color: var(--muted);
+            font-size: 16px;
+            margin-bottom: 2rem;
+            font-family: 'Courier New', monospace;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .label {
+            font-family: 'Courier New', monospace;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: var(--sang);
+            font-size: 12px;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            line-height: 1.8;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+        }
+
+        .discussion-item {
+            margin-bottom: 3rem;
+        }
+
+        .discussion-number {
+            display: inline-block;
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--sang);
+            margin-right: 1rem;
+            font-family: 'Courier New', monospace;
+            min-width: 60px;
+        }
+
+        .discussion-content {
+            display: inline-block;
+            vertical-align: top;
+            max-width: calc(100% - 80px);
+        }
+
+        .discussion-content h3 {
+            display: inline;
+            font-size: 1.5rem;
+            margin: 0;
+        }
+
+        .discussion-title {
+            margin-bottom: 0.5rem;
+        }
+
+        strong {
+            color: var(--sang);
+        }
+
+        a {
+            color: var(--sang);
+            text-decoration: underline;
+        }
+
+        a:hover {
+            opacity: 0.8;
+        }
+
+        .divider {
+            text-align: center;
+            margin: 4rem 0;
+            font-family: 'Courier New', monospace;
+            color: var(--muted);
+            letter-spacing: 3px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--muted);
+            font-size: 14px;
+            margin-top: 4rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            section h1 {
+                font-size: 2rem;
+            }
+
+            section h2 {
+                font-size: 1.5rem;
+            }
+
+            nav {
+                gap: 1rem;
+                font-size: 12px;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+
+            .discussion-number {
+                display: block;
+                margin-bottom: 0.5rem;
+            }
+
+            .discussion-content {
+                display: block;
+                max-width: 100%;
+            }
+
+            main {
+                padding: 1rem;
+            }
+
+            section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#intro">Intro</a>
+            <a href="#presentation">Présentation</a>
+            <a href="#sujets">Sujets</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECTION 1: INTRO -->
+        <section id="intro">
+            <h1>La Déraison</h1>
+            <p class="intro-meta">Dimanche 16 mars 2026 — 18h</p>
+            <p class="intro-meta">Présentation du projet avec François Vannesson</p>
+        </section>
+
+        <!-- SECTION 2: PRESENTATION PERSONNELLE -->
+        <section id="presentation">
+            <h2>Qui suis-je ?</h2>
+
+            <h3>Parcours</h3>
+            <ul>
+                <li><strong>Prépa HEC</strong> — Classe prépa littéraire et économique</li>
+                <li><strong>Institut National des Télécommunications</strong> — Formation d'ingénieur</li>
+                <li><strong>Chasseur de têtes IT</strong> — Recrutement dans les startups et le CAC40</li>
+                <li><strong>Reconversion</strong> — Ingénieur informatique pour hommes et partis politiques</li>
+            </ul>
+
+            <p style="margin-top: 2rem;">
+                <strong>Depuis 5 ans</strong>, je suis ingénieur informatique pour des hommes et partis politiques.
+            </p>
+        </section>
+
+
+        <!-- DIVIDER -->
+        <div class="divider">
+            ── SUJETS DE DISCUSSION ──
+        </div>
+
+        <!-- DISCUSSION TOPICS -->
+        <section id="sujets">
+            <div class="discussion-item">
+                <span class="discussion-number">[01]</span>
+                <div class="discussion-content">
+                    <div class="discussion-title">
+                        <h3>Accord de principe</h3>
+                    </div>
+                    <p>
+                        Êtes-vous partant ?
+                    </p>
+                </div>
+            </div>
+
+            <div class="discussion-item">
+                <span class="discussion-number">[02]</span>
+                <div class="discussion-content">
+                    <div class="discussion-title">
+                        <h3>Seul ou en équipe ?</h3>
+                    </div>
+                    <p>
+                        Dans le futur, envisagez-vous d'avoir d'autres auteurs ?
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="discussion-item">
+                <span class="discussion-number">[03]</span>
+                <div class="discussion-content">
+                    <div class="discussion-title">
+                        <h3>Style du site actuel</h3>
+                    </div>
+                    <p>
+                        Les éléments de personnalisation essentiels :
+                    </p>
+                    <ul>
+                        <li><strong>Police :</strong> Le corps des articles est actuellement en cursive (Architects Daughter). C'est moins lisible. Préférez-vous une sans-serif ou une serif classique ?</li>
+                        <li><strong>Images :</strong> Style actuel « aquarelle délavée ». Quel style préférez-vous ?</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="discussion-item">
+                <span class="discussion-number">[04]</span>
+                <div class="discussion-content">
+                    <div class="discussion-title">
+                        <h3>Format papier — Position proposée</h3>
+                    </div>
+                    <p>
+                        <strong>Ma recommandation :</strong> <em>Online first</em>. Construire l'audience et la légitimité du journal en ligne d'abord.
+                        Une fois cette base établie, si les lecteurs le demandent, envisager une édition papier.
+                    </p>
+                    <p>
+                        Pour les contenus papier, les outils gratuits existants
+                        (<strong>pencil.io</strong>, <strong>Webstudio</strong>, <strong>Canva</strong>) sont bien adaptés.
+                        Pas besoin de réinventer la roue avec un éditeur custom.
+                    </p>
+                </div>
+            </div>
+
+            <div class="discussion-item">
+                <span class="discussion-number">[05]</span>
+                <div class="discussion-content">
+                    <div class="discussion-title">
+                        <h3>Référencement — Problème et solution</h3>
+                    </div>
+                    <p>
+                        <strong>Problème actuel :</strong> Les articles générés dynamiquement depuis la base de données
+                        ne sont pas indexés par Google.
+                    </p>
+                    <ul>
+                        <li>✓ "La lettre de la déraison" → trouvable sur Google</li>
+                        <li>✗ "Le Grand oeuvre raté" → pas trouvable</li>
+                    </ul>
+                    <p style="margin-top: 1rem;">
+                        <strong>Solution proposée :</strong> Pour chaque nouvel article, créer une <strong>page statique dédiée</strong>.
+                        On convient d'un rythme (ex: 2×/semaine). Vous me donnez le texte et une description des images souhaitées,
+                        je me charge de publier la page en ligne → elle est indexée par Google.
+                        C'est assez rapide pour que ça en vaille la peine.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>La Déraison — Présentation Valentin Aubert</p>
+        <p style="margin-top: 0.5rem; font-size: 12px;">16 mars 2026</p>
+    </footer>
+</body>
+</html>
