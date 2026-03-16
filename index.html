@@ -139,22 +139,22 @@
 
         .discussion-item {
             margin-bottom: 3rem;
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
         }
 
         .discussion-number {
-            display: inline-block;
+            flex-shrink: 0;
             font-size: 2rem;
             font-weight: bold;
             color: var(--sang);
-            margin-right: 1rem;
             font-family: 'Courier New', monospace;
             min-width: 60px;
         }
 
         .discussion-content {
-            display: inline-block;
-            vertical-align: top;
-            max-width: calc(100% - 80px);
+            flex: 1;
         }
 
         .discussion-content h3 {
@@ -248,7 +248,7 @@
         <!-- SECTION 1: INTRO -->
         <section id="intro">
             <h1>La Déraison</h1>
-            <p class="intro-meta">Dimanche 16 mars 2026 — 18h</p>
+            <p class="intro-meta">Lundi 16 mars 2026 — 18h</p>
             <p class="intro-meta">Présentation du projet avec François Vannesson</p>
         </section>
 
@@ -312,8 +312,8 @@
                         Les éléments de personnalisation essentiels :
                     </p>
                     <ul>
-                        <li><strong>Police :</strong> Le corps des articles est actuellement en cursive (Architects Daughter). C'est moins lisible. Préférez-vous une sans-serif ou une serif classique ?</li>
-                        <li><strong>Images :</strong> Style actuel « aquarelle délavée ». Quel style préférez-vous ?</li>
+                        <li><strong>Police :</strong> Le corps des articles est actuellement en cursive (Architects Daughter). C'est moins lisible.</li>
+                        <li><strong>Images :</strong> Style actuel « aquarelle délavée ».</li>
                     </ul>
                 </div>
             </div>
